@@ -1,12 +1,3 @@
-// brute force method time complexity *** O(arr.length * times) ***
-
-// const arrayRotation = (arr, times) => {
-//   for (let i = 0; i < times; i++) {
-//     arr.unshift(arr.pop());
-//   }
-//   return arr;
-// };
-
 // ❤ lovely way to do this :)
 
 const arrayRotation = (arr, times) =>
