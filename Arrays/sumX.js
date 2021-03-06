@@ -1,4 +1,4 @@
-// for unsorted && unrotated array
+//**for unsorted && unrotated array */
 // const sumX = (arr, sum) => {
 //   const sortedArray = arr.sort(function (a, b) {
 //     return a - b;

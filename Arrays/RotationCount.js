@@ -14,6 +14,7 @@ const minEle = (arr) => {
 };
 const numberOfRotation = (arr) => {
   // this gives you the number of rotation happen in sorted array
+
   let n = arr.indexOf(minEle(arr));
   return n;
 };

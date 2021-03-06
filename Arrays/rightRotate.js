@@ -14,10 +14,11 @@ const reverse = (arr, start, end) => {
 const rotate = (arr, times, n) => {
   if (times === 0) return arr;
   times = times % n;
+
+  reverse(arr, 0, n - times - 1);
+  reverse(arr, n - times, n - 1);
   reverse(arr, 0, n - 1);
-  reverse(arr, 0, times - 1);
-  reverse(arr, times, n - 1);
   return arr;
 };
 
-console.log(rotate([1, 2, 3, 4, 5], 3, 5));
+console.log(rotate([1, 2, 3, 4, 5], 1, 5));
