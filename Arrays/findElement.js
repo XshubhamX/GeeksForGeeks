@@ -1,0 +1,1 @@
+//TODO:An array consisting of N integers is given. There are several Right Circular Rotations of range[L..R] that we perform. After performing these rotations, we need to find element at a given index.
