@@ -1,26 +1,28 @@
-// Write a function rotate(ar[], d, n) that rotates arr[] of size n by d elements.
+//TODO:Write a function rotate(ar[], d, n) that rotates arr[] of size n by d elements.
 
-const rotate = (arr, last, aux) => {
-  //this function will swap the element on last index with i
-  let temp = arr[last];
-  arr[last] = arr[aux];
-  arr[aux] = temp;
-};
-
-const arrayRotation = (arr, d, n) => {
-  if (d < 0) {
-    return arr;
-  }
-  d = d % n; //Eliminating Extra Loops
-  if (d === 0) {
-    return arr; //if d is 0 or in multiples of n no need of swaps
-  }
-  for (let j = 0; j < d; j++) {
-    for (let i = n - 2; i >= 0; i--) {
-      rotate(arr, n - 1, i);
-    }
+const reverseArray = (arr, start, end) => {
+  while (end > start) {
+    // swapping logic
+    let temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
   }
   return arr;
 };
+const rotateArray = (arr, times, n) => {
+  if (times === 0) {
+    // no need of rotation /
+    return arr;
+  }
+  // to avoid extra loop
+  times = times % n;
 
-console.log(arrayRotation([1, 2, 3, 4, 5], 1, 5));
+  reverseArray(arr, 0, times - 1); // reverse from starting index 0 -> 1
+  reverseArray(arr, times, n - 1); // reverse other half of arr
+  reverseArray(arr, 0, n - 1); // reverse both the half
+  return arr;
+};
+
+console.log(rotateArray([1, 2, 3, 4], 2, 4));
