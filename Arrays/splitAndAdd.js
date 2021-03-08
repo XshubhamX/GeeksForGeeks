@@ -18,5 +18,5 @@ const splitAdd = (arr, k, n) => {
   reverseArray(arr, n - k, n - 1);
   return arr;
 };
-
+                      
 console.log(splitAdd([12, 10, 5, 6, 52, 36], 2, 6));
