@@ -1,6 +1,7 @@
 // Rearrange an array such that arr[i] = i
 
 // brute force tech*   O(n^2)
+
 // const rearrange = (arr) => {
 //   let temp;
 //   for (let i = 0; i < arr.length; i++) {
@@ -29,4 +30,5 @@ const rearrange = (arr) => {
   }
   return arr;
 };
-console.log(rearrange([-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]));
+
+console.log(rearrange([-1, 3, -1, 2, 5, 6]));

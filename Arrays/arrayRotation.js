@@ -25,4 +25,4 @@ const rotateArray = (arr, times, n) => {
   return arr;
 };
 
-console.log(rotateArray([1, 2, 3, 4], 2, 4));
+console.log(rotateArray([1, 2, 3, 4, 5], 1, 5));
