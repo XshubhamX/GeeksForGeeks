@@ -11,6 +11,8 @@ const reverse = (arr) => {
   }
   return arr;
 };
+
 // using inbuilt function
 const reverse = (arr) => arr.reverse();
+
 console.log(reverse([1, 2, 3]));
