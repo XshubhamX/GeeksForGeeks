@@ -21,7 +21,8 @@ const solver = (arr) => {
   // console.log(finalArray);
   // console.log("=================");
   // console.log(...posArr.slice(1));
-  // this will run only j times but we also need other element present in posArr
+
+  // this will run only j times but we also need other element present in posArr or negArr
   finalArray.push(...posArr.slice(1), ...negArr.slice(1));
 
   return finalArray;
