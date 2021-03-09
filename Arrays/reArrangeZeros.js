@@ -24,6 +24,6 @@ const arrange = (arr) => {
   }
   return arr;
 };
-//TODO // Move all zeroes to end of array nOW DO IT USING SINGLE TRAVERSAL
 
-console.log(arrange([0, 1, 2, 0, 4, 50, 0, 0, -12]));
+//TODO // Move all zeroes to end of array nOW DO IT USING SINGLE TRAVERSAL
+console.log(arrange([1, 0, 1, 2, 0]));
