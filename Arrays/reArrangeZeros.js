@@ -15,11 +15,21 @@
 // };
 
 const arrange = (arr) => {
-  let j = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== 0) {
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-      j++;
+  let j = arr.length-1,i=0;
+  while (i < j) {
+    let leftValue = a[i];
+    let rightValue = a[j];
+    if (leftValue !== 0 && rightValue !== 0) {
+      i++;
+    } else if (leftValue === 0 && rightValue === 0) {
+      j--;
+    } else if (leftValue === 0) {
+      [a[i], a[j]] = [a[j], a[i]];
+      i++;
+      j--;
+    } else if (rightValue === 0) {
+      j--;
+      i++;
     }
   }
   return arr;
