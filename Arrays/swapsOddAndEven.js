@@ -7,7 +7,6 @@ const solver = (arr) => {
       [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
     }
   }
-  return arr;
 };
 
 console.log(solver([1, 2, 2, 1]));
