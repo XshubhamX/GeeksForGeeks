@@ -3,6 +3,7 @@
 const solver = (arr) => {
   let i = 0;
   let j = 0;
+
   let n = arr.length;
   while (j < n && i < n) {
     if (arr[i] > 0 && arr[j] < 0) {
@@ -18,4 +19,4 @@ const solver = (arr) => {
   return arr;
 };
 
-console.log(solver([1, -5, 6, -4, 8, 9, 4, -2]));
+console.log(solver([2, 3, -2, -3, -4]));

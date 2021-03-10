@@ -20,4 +20,4 @@ const solver = (arr) => {
   return result;
 };
 
-console.log(solver([5]));
+console.log(solver([1, 2, 1]));
