@@ -21,7 +21,7 @@ const naviveSolution = (string, q) => {
 
 console.log(
   naviveSolution(
-    "mediumisgood",
+    "jasbirrajrana",
     [
       [4, 7],
       [7, 11],
