@@ -20,13 +20,9 @@ const naviveSolution = (string, q) => {
 };
 
 console.log(
-  naviveSolution(
-    "jasbirrajrana",
-    [
-      [4, 7],
-      [7, 11],
-      [1, 11],
-    ],
-    3
-  )
+  naviveSolution("jasbirrajrana", [
+    [4, 7],
+    [7, 11],
+    [1, 11],
+  ])
 );
