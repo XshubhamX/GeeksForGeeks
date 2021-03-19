@@ -3,6 +3,7 @@ let block = new Array();
 
 const querySolver = (arr, l, r) => {
   let sum = 0;
+
   while (l < r && l % blockLen !== 0 && l !== 0) {
     sum = sum + arr[l];
     l++;
@@ -49,4 +50,12 @@ const solver = (arr, queries) => {
   return block;
 };
 
-console.log(solver([1, 2, 3, 4, 5, 6, 7, 8], [[2, 6]]));
+console.log(
+  solver(
+    [1, 2, 3, 4, 5, 6, 7, 8],
+    [
+      [2, 6],
+      [0, 5],
+    ]
+  )
+);
