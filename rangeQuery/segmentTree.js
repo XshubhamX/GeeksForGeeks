@@ -4,8 +4,13 @@ let segmentTree = new Array();
 const build = (s_tree, arr, start, end, idx) => {
   // if start===end => we have hit the leaft node recursive base condn..
   if (start === end) {
-    s_tree[idx] = arr[start];
-    return;
+    if (arr[start]) {
+      s_tree[idx] = arr[start];
+
+      return arr[start];
+    } else {
+      return 0;
+    }
   }
   // We haven't reached the leaf nodes so we need to traverse left and right recursively
   let mid = Math.floor((start + end) / 2);
